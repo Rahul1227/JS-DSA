@@ -35,7 +35,7 @@ var findKthLargest = function(nums, k) {
     let L = 0;
     let R = n - 1;
     
-    while (L <= R) {
+    while (true) {
         let partitionIndex = partitionAlgo(nums, L, R);
         if (partitionIndex === k - 1) {
             return nums[partitionIndex];
